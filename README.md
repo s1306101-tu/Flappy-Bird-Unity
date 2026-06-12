@@ -1,71 +1,162 @@
-#  Flappy Bird With Unity 
+<div align="center">
 
-![Gameplay](gameplay.gif)
+# 🐤 Flappy Bird With Unity
 
+### A from-scratch Unity recreation of the classic Flappy Bird — built as a learning challenge
 
-This project, named "Flappy Bird," is a recreation of the popular Flappy Bird game, developed using the Unity game engine. It was initiated as a challenge to build a well-known game from scratch, without any prior experience in Unity or game development. The objective of this project is to demonstrate the learning journey and the progress made throughout the development process.
+![Unity](https://img.shields.io/badge/Unity-2019.4+-000000?style=for-the-badge&logo=unity&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Android-blue?style=for-the-badge&logo=android&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/TheODDYSEY/Flappy-Bird-Unity?style=for-the-badge&color=orange)
+![Stars](https://img.shields.io/github/stars/TheODDYSEY/Flappy-Bird-Unity?style=for-the-badge&color=yellow)
 
-## Game Description
+</div>
 
-In "Flappy Bird," the player takes control of a bird character and must navigate it through a series of pipes without touching them. The bird automatically moves forward, and the player's objective is to make it flap its wings at the right time to gain height and avoid collisions with the pipes.
+---
 
-## Gameplay
+## 🎮 Demo
 
-The gameplay mechanics of this Flappy Bird clone are similar to the original game. The player controls a bird character and must navigate it through a series of pipes without touching them. The bird automatically moves forward, and the player can make it flap its wings to gain height and avoid collisions.
+<div align="center">
 
-To control the bird, you can use the following inputs:
+![Gameplay](https://github.com/TheODDYSEY/Flappy-Bird-Unity/raw/main/gameplay.gif)
 
-- **Mouse Click**: Click the left mouse button to make the bird flap its wings.
-- **Spacebar**: Press the spacebar to make the bird flap its wings.
+*Tap or press Space — survive as long as you can*
 
-Your objective is to survive for as long as possible and achieve a high score by passing through as many pipes as you can.
+</div>
 
-## Features
+---
 
-The game incorporates the following features:
+## 📖 About
 
-- Simple yet addictive gameplay mechanics similar to the original Flappy Bird game.
-- Realistic physics for bird movement and pipe collisions.
-- Randomly generated pipes for a dynamic and challenging experience.
-- Sound effects and background music to enhance the gaming experience.
-- Easy-to-understand controls using mouse clicks or spacebar presses.
+**Flappy Bird With Unity** is a full recreation of the iconic Flappy Bird game, built entirely in Unity from scratch with no prior game development experience. The project was initiated as a personal challenge to learn Unity and C# by building something recognizable and fun.
 
-## Getting Started
+Every mechanic — physics, pipe generation, collision, score tracking, audio — was implemented from the ground up as part of the learning process.
 
-To run "Flappy Bird" on your local machine, follow the steps below:
+---
 
-1. Clone the repository to your local machine or download the source code as a ZIP file.
-2. Open the project in Unity using a compatible version (recommended: Unity 2019.4.20f1 or later).
-3. Ensure that you have the necessary components installed for Unity to run (e.g., Android Build Support for building to Android devices).
-4. Once the project is loaded, navigate to the "Scenes" folder and open the "Game" scene.
-5. In the Unity editor, click the "Play" button to start the game in the Unity Player.
+## ✨ Features
 
-## Learning Journey
+- 🐦 **Physics-based bird movement** — realistic gravity and flap impulse using Unity's Rigidbody2D
+- 🟩 **Procedural pipe spawning** — randomly generated gaps keep every run unique
+- 💥 **Collision detection** — game ends on pipe or ground contact
+- 🔢 **Score tracking** — increments each time the bird clears a pipe gap
+- 🔊 **Sound effects & music** — flap, score, and death sounds via Unity AudioSource
+- 🖱️ **Dual input support** — mouse click or spacebar to flap
+- 🔁 **Instant restart** — jump back in immediately after death
 
-This project was developed as a challenge to learn Unity and game development from scratch. No prior experience or knowledge was available before starting this project. Throughout the development process, various skills and concepts were learned, including:
+---
 
-- Introduction to Unity's interface and project setup.
-- Understanding game objects, components, and the Unity scene hierarchy.
-- Implementing physics-based movement for the bird character.
-- Creating and animating 2D assets using Unity's Sprite Renderer.
-- Handling user input to control the bird's movement.
-- Implementing collision detection and managing game states.
-- Designing and generating random pipes for gameplay variety.
-- Incorporating sound effects and background music using Unity's Audio Source component.
-- Building and testing the game on different platforms.
+## 🕹️ Controls
 
-This project serves as a testament to the learning potential of taking on new challenges and exploring unfamiliar territories.
+| Input | Action |
+|---|---|
+| `Left Mouse Click` | Flap wings |
+| `Spacebar` | Flap wings |
 
-## Contributions
-Feel free to fork the repository and use it as a starting point for your own game development projects or experiments.
+---
 
+## 🛠️ Tech Stack
 
-## License
+| Technology | Role |
+|---|---|
+| ![Unity](https://img.shields.io/badge/Unity-000000?logo=unity&logoColor=white) | Game engine, physics, scene management |
+| ![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white) | Game logic, input handling, scoring |
+| `ShaderLab / HLSL` | Visual shaders for 2D rendering |
+| `Unity AudioSource` | Sound effects and background music |
+| `Unity Sprite Renderer` | 2D asset display and animation |
+| `Unity Rigidbody2D` | Physics-based bird movement |
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code for personal and educational purposes. However, please refrain from using this project for commercial purposes without obtaining appropriate permissions.
+---
 
+## 🚀 Getting Started
 
-## Acknowledgments
+### Prerequisites
 
-Special thanks to the creators of Flappy Bird for the original concept and inspiration. Additionally, gratitude goes to the Unity community and various online tutorials and resources that aided in the learning process. 
-Feel free to explore the code, experiment with modifications, and enjoy the game! Happy flapping!
+- [Unity Hub](https://unity.com/download)
+- Unity **2019.4.20f1** or later
+- Android Build Support *(optional — only needed for mobile builds)*
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/TheODDYSEY/Flappy-Bird-Unity.git
+```
+
+1. Open **Unity Hub** and click **Add project from disk**
+2. Select the cloned `Flappy-Bird-Unity` folder
+3. Open the project in Unity
+4. Navigate to `Assets/Scenes/` and open the **Game** scene
+5. Press ▶ **Play** in the Unity Editor to run
+
+---
+
+## 📁 Project Structure
+
+```
+Flappy-Bird-Unity/
+├── Assets/
+│   ├── Scenes/         # Game scene
+│   ├── Scripts/        # C# game logic (Bird, PipeSpawner, GameManager...)
+│   ├── Sprites/        # 2D art assets
+│   ├── Audio/          # Sound effects and music
+│   └── Prefabs/        # Pipe and bird prefabs
+├── Packages/           # Unity package manifest
+├── ProjectSettings/    # Unity project configuration
+├── gameplay.gif        # Demo recording
+└── README.md
+```
+
+---
+
+## 📚 What I Learned
+
+This project was a first dive into Unity and game development. Key concepts covered:
+
+- Unity Editor interface, scenes, and project setup
+- GameObjects, Components, and the scene hierarchy
+- Physics-based movement with `Rigidbody2D` and `AddForce`
+- 2D asset creation and display with `Sprite Renderer`
+- Input handling (`Input.GetMouseButtonDown`, `Input.GetKeyDown`)
+- Collision detection with `OnCollisionEnter2D` / `OnTriggerEnter2D`
+- Procedural content generation (random pipe gap spawning)
+- Audio integration with `AudioSource.PlayOneShot`
+- Multi-platform builds (PC and Android)
+
+---
+
+## 🤝 Contributing
+
+Forks are welcome — use this as a base for your own Unity experiments. If you make something cool with it, consider opening a PR or dropping a star ⭐
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE). Free for personal and educational use. Commercial use requires permission.
+
+---
+
+## 🙏 Acknowledgments
+
+- Original **Flappy Bird** by Dong Nguyen for the concept and inspiration
+- The **Unity community**, docs, and tutorials that made this learning journey possible
+
+---
+
+## 🍴 Fork History
+
+<div align="center">
+
+[![Fork History](https://reporoster.com/forks/TheODDYSEY/Flappy-Bird-Unity)](https://github.com/TheODDYSEY/Flappy-Bird-Unity/network/members)
+
+</div>
+
+---
+
+<div align="center">
+
+Made with ❤️ and Unity &nbsp;·&nbsp; Happy flapping! 🐤
+
+</div>
