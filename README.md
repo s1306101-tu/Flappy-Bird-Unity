@@ -145,15 +145,6 @@ Licensed under the [MIT License](LICENSE). Free for personal and educational use
 - Original **Flappy Bird** by Dong Nguyen for the concept and inspiration
 - The **Unity community**, docs, and tutorials that made this learning journey possible
 
----
-
-## 🍴 Fork History
-
-<div align="center">
-
-[![Fork History](https://reporoster.com/forks/TheODDYSEY/Flappy-Bird-Unity)](https://github.com/TheODDYSEY/Flappy-Bird-Unity/network/members)
-
-</div>
 
 ---
 
