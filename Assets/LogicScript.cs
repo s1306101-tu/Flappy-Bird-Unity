@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LogicScript : MonoBehaviour
 {
     public int playerScore = 0;
-    public Text scoreText;
+    public TMP_Text scoreText;
     public GameObject gameOverScreen;
     public AudioSource gameOverMusic;
     public AudioSource gameMusic;
@@ -16,6 +17,7 @@ public class LogicScript : MonoBehaviour
     void Start()
     {
         gameMusic.Play();
+        scoreText.text = "score : " + playerScore.ToString();
     }
 
     [ContextMenu("Increase Score")]
@@ -23,7 +25,7 @@ public class LogicScript : MonoBehaviour
     {
         Debug.Log("Adding +" + scoreToAdd + " score");
         playerScore += scoreToAdd;
-        scoreText.text = playerScore.ToString();
+        scoreText.text = "score : " + playerScore.ToString();
     }
 
     public void restartGame()
@@ -41,9 +43,9 @@ public class LogicScript : MonoBehaviour
     {
         if (!gameOverScreen.activeSelf)
         {
-            gameMusic.Stop();
+            //gameMusic.Stop();
             gameOverScreen.SetActive(true);
-            gameOverMusic.Play();
+            //gameOverMusic.Play();
         }
 
     }
